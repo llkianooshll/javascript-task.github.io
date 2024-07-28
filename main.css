@@ -1,0 +1,101 @@
+body {
+    background-color: rgba(0, 0, 0, 0.318)
+}
+
+
+.CRD {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    color: black;
+    box-shadow: 15px 15px 17px rgb(44, 44, 44);
+    border-radius: 20px;
+    margin: 30px 0px;
+    background-image: linear-gradient(to right, rgb(78, 77, 77), rgba(37, 36, 36, 0.697));
+}
+
+#countdown {
+
+    color: rgb(70, 19, 19);
+    text-shadow: 2px 2px 5px rgb(148, 33, 33);
+}
+
+.form-control:hover {
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.56);
+    transform: scale(1.05);
+}
+
+.btn {
+    border: 1px solid white;
+    background-color: black;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 5px 5px 8px black;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 5px 5px 12px black;
+    transition: 0.3s;
+    border: 3px solid darkgreen;
+    transform: scale(1.05);
+}
+
+#audio {
+    color: black;
+}
+
+.music-btn {
+    margin: 5px 5px;
+    border: none;
+    background: none;
+    border-radius: 7px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    color: white;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+.music-btn:hover {
+    background-color: rgb(65, 65, 65);
+    box-shadow: 5px 5px 12px black;
+    transition: 0.3s;
+    transform: scale(1.08);
+    border: 1px solid black;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: 135px;
+}
+
+.shomaresh-CRD:hover #countdown{
+    transition: 0.4s;
+    transform: scale(1.1);
+    color: rgb(22, 6, 6);
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        top: 110px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(muli.regular.ttf);
+}
+
+* {
+    font-family: myFirstFont;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>TASK</title>
+</head>
+
+<body class="container-fluid">
+
+    <!-- section BMI calculator -->
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-12 text-center ">
+            <div class="CRD py-3">
+                <h3 style="text-shadow: 2px 2px 4px rgb(25, 25, 25);">BMI Calculation</h2>
+                    <p> Weight (Kg) : <span id="value-rng-w">70</span></p>
+                    <input style="width: 80%;" type="range" min="1" max="250" value="70" id="range-inp-w">
+
+                    <p>Height (Cm) : <span id="value-rng-h">170</span></p>
+                    <input style="width: 80%;" type="range" min="1" max="250" value="170" id="range-inp-h">
+                    <div>
+                        <h4 style="text-shadow: 2px 2px 2px rgb(126, 126, 126)">
+                            BMI:
+                            <p id="BMI"></p>
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 style="padding: 0px 100px;">
+                            Status:
+                            <p style="border-radius: 25px;" class="my-2 py-2 text-white" id="status"></p>
+                        </h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section music player -->
+    <div class="music-img row justify-content-center">
+        <img id="audio-img" src="track1.png" alt="">
+    </div>
+    <div style="z-index: 1;" class="row justify-content-center">
+        <div class="col-md-5 col-12 text-center ">
+            <div class="player CRD py-3">
+                <audio style="margin-top: 110px;" id="audio" controls>
+                    <source id="audioSource" src="track1.mp3" type="audio/mpeg">
+                    مرورگر شما از تگ audio پشتیبانی نمی‌کند.
+                </audio>
+                <div class="controls my-3">
+                    <button id="prev" class="music-btn p-2"><i class="fa fa-arrow-left"></i></button>
+                    <button id="play" class="music-btn p-2"><i class="fa fa-play"></i></button>
+                    <button id="next" class="music-btn p-2"><i class="fa fa-arrow-right"></i></button>
+                    <button id="repeat" class="music-btn p-2"><i class="fa fa-rotate-right"></i></button>
+                    <button id="shuffle" class="music-btn p-2">shuffle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section shomareshgar maekoos -->
+
+    <div class="row justify-content-center my-3">
+        <div class="col-md-5 col-12 text-center ">
+            <div class="CRD py-3 shomaresh-CRD">
+
+                <b>
+                    <div class="countdown" id="countdown"></div>
+                </b>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section form -->
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-12 text-center">
+            <div class="CRD p-3">
+                <form class="needs-validation my-2" novalidate>
+                    <div class="row justify-content-center">
+                        <div class="col-8 my-2">
+                            <input style="background: none;background-color: black;border-radius: 20px;color: white;"
+                                type="text" class="form-control" placeholder="Username"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback text-danger">
+                                Please enter a username.
+                            </div>
+                        </div>
+                        <div class="col-8 my-2">
+                            <input style="background: none;background-color: black;border-radius: 20px;color: white;"
+                                type="email" class="form-control" placeholder="Email Address" required>
+                            <div class="invalid-feedback text-danger">
+                                Email must be valid
+                            </div>
+                        </div>
+                        <div class="col-8 my-2">
+                            <input style="background: none;background-color: black;border-radius: 20px;color: white;"
+                                type="Password" class="form-control" id="password" placeholder="Password"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback text-danger">
+                                Please enter a password.
+                            </div>
+                        </div>
+                        <div class="col-8 my-2">
+                            <input style="background: none;background-color: black;border-radius: 20px;color: white;"
+                                type="Password" class="form-control" id="repassword" placeholder="Repasswprd"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div id="repass-feedback" class="text-danger">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn mt-3 text-center" type="submit">Login</button>
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
