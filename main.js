@@ -93,10 +93,10 @@ function pauseTrack() {
 playButton.addEventListener('click', () => {
     if (audio.paused) {
         playTrack();
-        playButton.textContent = 'متوقف کردن';
+        document.getElementById("play-icon").classList.replace("fa-play","fa-pause")
     } else {
         pauseTrack();
-        playButton.textContent = 'پخش';
+        document.getElementById("play-icon").classList.replace("fa-pause","fa-play")
     }
 });
 
@@ -177,7 +177,7 @@ const x = setInterval(function () {
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "زمان به پایان رسید!";
+        document.getElementById("countdown").innerHTML = "END";
         localStorage.removeItem('countdownDate'); 
     }
 }, 1000);
